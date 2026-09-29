@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RecallDesk - AI Customer Support Agent</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="header">
+
+            <div>
+                <h1>RecallDesk</h1>
+
+                <p>
+                    AI Customer Support Agent with Persistent Memory
+                </p>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                Memory Active
+            </div>
+
+        </header>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="main-container">
+
+
+            <!-- ================= CUSTOMER PROFILE ================= -->
+
+            <aside class="customer-panel">
+
+                <h2>Customer</h2>
+
+                <div class="profile-card">
+
+                    <div class="avatar">
+                        SJ
+                    </div>
+
+                    <h3>Sarah Johnson</h3>
+
+                    <p class="customer-id">
+                        Customer ID: sarah
+                    </p>
+
+                </div>
+
+
+                <div class="customer-details">
+
+                    <div class="detail">
+
+                        <span class="label">
+                            Plan
+                        </span>
+
+                        <span class="value">
+                            Pro
+                        </span>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span class="label">
+                            Environment
+                        </span>
+
+                        <span class="value">
+                            Windows
+                        </span>
+
+                    </div>
+
+
+                    <div class="detail">
+
+                        <span class="label">
+                            Status
+                        </span>
+
+                        <span class="value active">
+                            Active
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MEMORY SECTION -->
+
+                <div class="memory-info">
+
+                    <h3>Persistent Memory</h3>
+
+                    <p>
+                        RecallDesk remembers previous
+                        customer interactions and uses
+                        them to personalize future responses.
+                    </p>
+
+                </div>
+
+            </aside>
+
+
+
+            <!-- ================= CHAT ================= -->
+
+            <section class="chat-container">
+
+                <div class="chat-header">
+
+                    <div>
+                        <h2>Support Conversation</h2>
+
+                        <p>
+                            Customer: Sarah Johnson
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- CHAT MESSAGES -->
+
+                <div
+                    id="chatMessages"
+                    class="chat-messages"
+                >
+
+                    <!-- Initial customer message -->
+
+                    <div class="message customer-message">
+
+                        <div class="message-label">
+                            Sarah Johnson
+                        </div>
+
+                        <div class="message-bubble">
+                            Hi, I'm having an issue with my checkout.
+                        </div>
+
+                    </div>
+
+
+                    <!-- Initial agent message -->
+
+                    <div class="message agent-message">
+
+                        <div class="message-label">
+                            RecallDesk
+                        </div>
+
+                        <div class="message-bubble">
+                            I'll help you troubleshoot the checkout issue.
+                            Could you tell me what happens when you try to check out?
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= INPUT ================= -->
+
+                <div class="chat-input-area">
+
+                    <input
+                        type="text"
+                        id="messageInput"
+                        placeholder="Type your message..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        id="sendButton"
+                    >
+                        Send
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= MEMORY PANEL ================= -->
+
+            <aside class="memory-panel">
+
+                <div class="memory-header">
+
+                    <h2>
+                        Memory Retrieved
+                    </h2>
+
+                    <span class="memory-count" id="memoryCount">
+                        0
+                    </span>
+
+                </div>
+
+
+                <p class="memory-description">
+                    Relevant information retrieved from
+                    Hindsight for this conversation.
+                </p>
+
+
+                <div
+                    id="memoryList"
+                    class="memory-list"
+                >
+
+                    <div class="empty-memory">
+                        Send a message to retrieve
+                        customer memories.
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </main>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
